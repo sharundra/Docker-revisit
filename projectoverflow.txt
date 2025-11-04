@@ -6,3 +6,6 @@
     a. Then run the container of hello-world using the command, "docker run hello-world"
 5. If Docker Engine runs fine, run this command in this project's/repo's terminal to build image for app.py, "docker build -t <image-name> ." 
     #the correctly built image should show up in Docker Desktop.
+6. Now from any terminal in the system (project or default or docker desktop), run the image to create the container, "docker run -p 5000:5000 <docker image name>".
+    #In 5000:5000 -- first 5000 is the port app is exposed to,in the image and 2nd 5000 is the port of our system that we want to use to map image. Though app's 5000 is fixed but system's port could be anything of our wish.
+    #After running the container, access it in browser, "localhost:5000"
