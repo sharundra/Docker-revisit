@@ -1,0 +1,8 @@
+1. Create a repo "Docker-revisit" and clone it in in local.
+2. Create scripts app.py, requirements.txt and Dockerfile.
+3. Signup/login on Docker Hub(hub.docker.com) and then install Docker Desktop and login there also with same credentials. Just opening Docker Desktop, automatically runs Docker Engine.
+# Docker Hub provides facility to push and pull Docker images.
+4. Just to confirm proper installation and working of Docker Desktop, pull hell-world image using command, "docker pull hello-world" in the terminal of Docker Desktop.
+    a. Then run the container of hello-world using the command, "docker run hello-world"
+5. If Docker Engine runs fine, run this command in this project's/repo's terminal to build image for app.py, "docker build -t <image-name> ." 
+    #the correctly built image should show up in Docker Desktop.
