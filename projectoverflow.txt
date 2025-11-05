@@ -9,3 +9,10 @@
 6. Now from any terminal in the system (project or default or docker desktop), run the image to create the container, "docker run -p 5000:5000 <docker image name>".
     #In 5000:5000 -- first 5000 is the port app is exposed to,in the image and 2nd 5000 is the port of our system that we want to use to map image. Though app's 5000 is fixed but system's port could be anything of our wish.
     #After running the container, access it in browser, "localhost:5000"
+7. We can explicitly add tag to the image with this command, "docker tag <docker-image-name> <username>/<docker-image-name>:<tag-name>".
+    # A new pointer to same image will appear in Docker Desktop.
+8. Push the image to Docker Hub registry -- "docker push <username>/<docker-image-name>:<tag-name>"
+ # Check on Docker Hub website to confirm if its pushed.
+9. Delete all the references/pointers to <docker-image-name> image using the command, "docker rmi <username>/<docker-image-name>:<tag-name>" or <docker rmi <docker-image-name>:<tag-name>> or simply using delete icon in docker desktop.
+10. Pull the docker image from registry/remote repo -- "docker pull <username>/<docker-image-name>:<tag-name>"  
+
